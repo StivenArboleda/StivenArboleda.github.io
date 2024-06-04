@@ -9,22 +9,22 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Ruta para manejar los datos del formulario y enviar el correo electrónico
-app.post('/api/emailHandler', (req, res) => {
+app.post('/api/contacto', (req, res) => {
   const { name, email, affair, message } = req.body;
 
   // Configurar el transporter de nodemailer
   const transporter = nodemailer.createTransport({
-    service: 'Gmail', // Aquí debes especificar el servicio de correo que estás utilizando
+    service: 'Gmail',
     auth: {
-      user: 'stiven2201@gmail.com', // Tu dirección de correo electrónico
-      pass: '1006011887js2203' // Tu contraseña de correo electrónico
+      user: 'stiven2201@gmail.com',
+      pass: '1006011887js2203'
     }
   });
 
   // Configurar el correo electrónico
   const mailOptions = {
     from: email,
-    to: 'stiven2201@gmail.com', // Tu dirección de correo personal
+    to: 'stiven2201@gmail.com',
     subject: affair,
     text: `${name} ha enviado un mensaje desde tu sitio web.\n\nCorreo electrónico: ${email}\n\nMensaje: ${message}`
   };
