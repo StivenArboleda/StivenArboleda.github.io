@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Ruta para manejar los datos del formulario y enviar el correo electrónico
-app.post('/api/contacto', (req, res) => {
+app.post('/api/emailHandler', (req, res) => {
   const { name, email, affair, message } = req.body;
 
   // Configurar el transporter de nodemailer
