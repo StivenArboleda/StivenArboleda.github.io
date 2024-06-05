@@ -605,10 +605,10 @@ img.logo-sena {
     box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%), 0 25px 10px -24px rgb(5 5 5 / 10%);
 }
 
-.card_JuegoAhorcado {
+/*.card_JuegoAhorcado {
     margin-bottom: 4rem;
 }
-
+*/
 .card_portafolio {
     margin-bottom: 4rem;
     border: 1px solid var(--eerie-black);
@@ -704,136 +704,103 @@ img.logo-sena {
     transition: all .4s ease;
 }
 
-/* Contacto */
+/* Formacion continua */
 
-.contacto {
+.informacion {
     background-color: var(--eerie-black);
     width: 100%;
     height: auto;
-    padding: 0 2rem 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos hijos horizontalmente */
+    text-align: center; 
+    padding-bottom: 2rem;
+}  
+
+.texto_formacionContinua {
+    color: var(--light-grey);
+    font-family: 'Cooper Hewitt';
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    white-space: pre-line;
+    text-align: center;
+    line-height: 2.2rem;
+    margin-bottom: 2rem;
 }
 
-.contacto h1 {
+.sobre-formacion {
+    background-color: var(--eerie-black);
+    width: 100%;
+    height: auto;
+}
+
+.sobre-formacion h1 {
     display: block;
     text-align: center;
     color: var(--white);
     font-family: 'Cooper Hewitt';
     font-size: 2.4rem;
     letter-spacing: .1rem;
-    padding: 6rem 0 4rem 0;
+    padding-top: 6rem;
 }
 
-.container_img--contacto {
+.informacion h1 {
+    display: block;
+    text-align: center;
+    color: var(--white);
+    font-family: 'Cooper Hewitt';
+    font-size: 2.4rem;
+    letter-spacing: .1rem;
+    padding: 6rem 0 5rem 0;
+}
+
+.puntos1-informacion, .puntos2-informacion {
     display: none;
 }
 
-.container--contacto {
-    width: 100%;
-    background-color: var(--beaver);
-    border-radius: 24px;
-    padding: 3rem;
-    position: relative;
+.container_fondoPuntos--informacion img {
+    display: none;
 }
 
-.container_text--contacto {
-    width: 100%;
-}
-
-.container_text--contacto p {
-    font-size: 1.6rem;
-    font-family: 'Cooper Hewitt';
-    color: var(--white);
-    margin-bottom: 3rem;
-    letter-spacing: 1px;
-    line-height: 2.3rem;
-}
-
-.form-contact input {
-    font-family: 'Cooper Hewitt';
-    background: transparent;
-    border: 1px solid var(--light-grey);
-    width: 100%;
-    padding: 1rem;
-    border-radius: 1rem;
-    color: var(--white);
-    font-size: 1.6rem;
-    outline: none;
-    margin-bottom: 2rem;
-    letter-spacing: 1px;
-}
-
-.form-contact input::placeholder {
-    color: var(--light-grey);
-}
-
-.form-contact .input-invalid {
-    border: 1px solid #574438;
-    color: #574438;
-}
-
-.form-contact textarea {
-    background: transparent;
-    border: 1px solid var(--light-grey);
-    font-family: 'Cooper Hewitt';
-    width: 100%;
-    padding: 1rem;
-    border-radius: 1rem;
-    color: var(--white);
-    font-size: 1.6rem;
-    outline: none;
-    margin-bottom: 3rem;
-    letter-spacing: 1px;
-    resize: none;
-}
-
-.form-contact textarea::placeholder {
-    color: var(--light-grey);
-}
-
-.form-contact textarea::-webkit-scrollbar {
-    width: 8px;
-}
-
-.form-contact textarea::-webkit-scrollbar-track {
-    background-color: #5f9950;
-}
-
-
-.form-contact textarea::-webkit-scrollbar-thumb {
-    background-color: #574438;
-}
-
-
-.btn_form--contacto {
-    display: flex;
+.cards_container--informacion {
+    display: grid;
+    grid-template-columns: 13rem 13rem;
+    grid-template-rows: 14rem 14rem 14rem;
+    gap: 3rem;
     justify-content: center;
+    padding-bottom: 5rem;
 }
 
-.btn_form--contacto button {
-    background: #5f9950;
-    border: none;
-    font-family: 'Cooper Hewitt';
-    width: 20rem;
-    padding: .8rem 1rem;
-    border-radius: 1rem;
+.cards--informacion {
+    background-color: var(--jet);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 13rem;
+    height: 14rem;
+    text-decoration: none; 
+    color: inherit;
+}
+
+.cards--informacion img {
+    margin-top: .7rem;
+    width: 9rem;
+}
+
+.cards--informacion p {
     color: var(--white);
-    font-size: 1.8rem;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: 1s all;
+    font-family: 'Cooper Hewitt';
+    letter-spacing: .1rem;
+    font-size: 1.4rem;
+    margin-bottom: .7rem;
 }
-
-.btn_form--contacto button:hover {
-    background: #5f9950;
-    color: var(--black);
-    font-weight: bold;
-    transform: scale(1.1);
-    box-shadow: 0px 9px 15px -1px rgba(0,0,0,0.20);
-    transition: all .4s ease;
-}
-
-.btn_form--contacto button:active {
-    background: #574438;
+/* Space */
+space {
+    background-color: var(--eerie-black);
+    margin-bottom: 2rem;
 }
 
 /* Footer */

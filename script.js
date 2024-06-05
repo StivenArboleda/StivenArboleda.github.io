@@ -1,10 +1,3 @@
-const btn = document.getElementById('button');
-const sectionAll = document.querySelectorAll('section[id]');
-const inputName = document.querySelector('#nombre');
-const inputEmail = document.querySelector('#email');
-const flagsElement = document.getElementById('flags');
-const textsToChange = document.querySelectorAll('[data-section]');
-
 /* ===== Loader =====*/
 window.addEventListener('load', () => {
     const contenedorLoader = document.querySelector('.container--loader');
