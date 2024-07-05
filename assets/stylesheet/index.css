@@ -11,6 +11,7 @@
     --beaver: #79AE92;
     --light-grey: #FBFFCD;
     --white: #FFFFFF;
+    --head: #1d7c8c;
 }
 
 * {
@@ -46,8 +47,8 @@ html::-webkit-scrollbar-thumb {
 /* Header */
 
 .header {
-    background-color: var(--jet);
-    padding: .8rem 3rem;
+    background-color: var(--head);
+    padding: .9rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,7 +66,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .header .logo__header {
-    width: 9rem;
+    width: 12rem;
 }
 
 nav.nav_menu.active {
@@ -277,7 +278,13 @@ span+span {
 }
 
 .image_home {
-    max-width: 65%;
+    max-width: 100%;
+    transition: .4s;
+    animation: image 2s;
+}
+
+.image_me {
+    max-width: 100%;
     transition: .4s;
     animation: image 2s;
 }
