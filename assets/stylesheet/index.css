@@ -612,15 +612,6 @@ img.logo-sena {
     box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%), 0 25px 10px -24px rgb(5 5 5 / 10%);
 }
 
-/*.card_JuegoAhorcado {
-    margin-bottom: 4rem;
-}
-*/
-.card_portafolio {
-    margin-bottom: 4rem;
-    border: 1px solid var(--eerie-black);
-}
-
 .container_imgCard--proyectos {
     margin-bottom: 1rem;
     border-radius: 20px 20px 0 0;
